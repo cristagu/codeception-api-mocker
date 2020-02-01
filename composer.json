@@ -1,0 +1,15 @@
+{
+    "name": "cristagu/codeception-api-mocker",
+    "description": "Codeception module to help with mocking api's",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neagu Cristian-Doru",
+            "email": "cristian.neagu@emag.ro"
+        }
+    ],
+    "require": {
+        "codeception/codeception": "^4.0"
+    }
+}
