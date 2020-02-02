@@ -13,9 +13,7 @@
         "codeception/codeception": "^4.0"
     },
     "autoload": {
-        "psr-4": {
-            "\\Codeception\\Module\\": "src/Codeception/Module"
-        }
+        "classmap": ["src/"]
     },
     "autoload-dev": {
         "psr-4": {
