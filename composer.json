@@ -10,7 +10,9 @@
         }
     ],
     "require": {
-        "codeception/codeception": "^4.0"
+        "codeception/codeception": "^4.0",
+        "symfony/process": "^5.0",
+        "symfony/http-foundation": "^5.0"
     },
     "autoload": {
         "classmap": ["src/"]

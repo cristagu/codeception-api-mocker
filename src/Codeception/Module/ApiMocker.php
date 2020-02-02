@@ -2,17 +2,19 @@
 
 namespace Codeception\Module;
 
+use Codeception\Lib\ModuleContainer;
 use Codeception\Module;
+use WebServer\WebServer;
 
 class ApiMocker extends Module
 {
-    public function __initialize()
-    {
-        $this->debug("ApiMocker initialized successfully");
-    }
+    const CONFIG_PORT = 'port';
+    const CONFIG_DEFAULT_PORT = 8080;
 
-    public function amGoingToFoo()
+    public function __construct(ModuleContainer $moduleContainer, array $config = [])
     {
-        $this->debug("Called ApiMocker::amGoingToFoo");
+        $port = $config[self::CONFIG_PORT] ?? self::CONFIG_DEFAULT_PORT;
+
+        $server = new WebServer($port);
     }
 }
